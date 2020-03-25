@@ -17,3 +17,5 @@ package-lock.json
 package.json
 gulpfile.js
 .stylelintrc
+.gitignore
+README.md
