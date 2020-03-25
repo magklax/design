@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн интерьера</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header text-center text-white">
+      <nav id="mainNavbar" class="main-nav">
+        <div class="container">
+          <button class="main-nav__toggler toggler" type="button" aria-label="Закрыть меню">
+            <svg width="64" height="64"><use xlink:href="img/sprite.svg#close">
+            </button>
+          <ul class="navbar-nav mb-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Наши услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul id="socialNavbar" class="navbar-social list-inline row justify-content-center justify-content-xl-start">
+            <li class="mx-auto col-auto mx-md-5 mx-xl-0">
+              <a href="#">
+                <svg width="37" height="37"><use xlink:href="img/sprite.svg#vk"></use></svg>
+              </a>
+            </li>
+            <li class="mx-auto col-auto mx-md-5 mx-xl-0">
+              <a href="#">
+                <svg width="37" height="37"><use xlink:href="img/sprite.svg#instagram"></use></svg>
+              </a>
+            </li>
+            <li class="mx-auto col-auto mx-md-5 mx-xl-0">
+              <a href="#">
+                <svg width="37" height="37"><use xlink:href="img/sprite.svg#facebook"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="top-nav row justify-content-between align-items-center">
+          <a class="top-nav__logo col-auto" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+              <img src="img/logo-mobile.png"alt="Логотип">
+            </picture>
+          </a>
+          <button class="top-nav__toggler toggler col-auto" type="button" aria-label="Открыть меню">
+            <svg width="64" height="64"><use xlink:href="img/sprite.svg#open">
+          </button>
+          <div class="top-nav__phone col-auto">
+            <a href="tel:+1234567890">
+              <svg width="17" height="17"><use xlink:href="img/sprite.svg#telephone"></use></svg>
+            </a>
+            <span>+1 (123) 456 78 90</span>
+          </div>
+        </div>
+        <div class="banner">
+          <h1 class="banner__title m-0">Дизайн интерьера</h1>
+          <p class="banner__text m-0">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
+          <a class="banner__btn button text-white" href="#">Заказать дизайн</a>
+          <button class="banner__down mx-auto text-white" type="button" aria-label="Прокрутить вниз">
+            <svg class="navbar-social__icon" width="20" height="82"><use xlink:href="img/sprite.svg#arrow-down"></use></svg>
+          </button>
+          <div id="socialNavbarBox"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="features section">
+        <div class="container">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="features__list list-inline d-flex flex-column flex-md-row flex-wrap">
+            <li class="features__item">
+              <span class="feature__number">01</span>
+              <h3 class="features__title">Берем весь ремонт на себя</h3>
+              <p class="features__text mb-0">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться завершения работ и наслаждаться результатом</p>
+            </li>
+            <li class="features__item">
+              <span class="feature__number">02</span>
+              <h3 class="features__title">Мы - профессионалы своего дела</h3>
+              <p class="features__text mb-0">Наши дизайнеры постоянно повышают квалификацию, посещают курсы и тренинги, а студия уже реализовала свыше 1000 дизайн-проектов</p>
+            </li>
+            <li class="features__item">
+              <span class="feature__number">03</span>
+              <h3 class="features__title">Наши проекты индивидуальны</h3>
+              <p class="features__text mb-0">Каждый созданный студией интерьер - индивидуальное и максимально продуманное решение для каждого вида помещения</p>
+            </li>
+            <li class="features__item">
+              <span class="feature__number">04</span>
+              <h3 class="features__title">Работаем на выгодных условиях</h3>
+              <p class="features__text mb-0">Ценовая политика студии очень лояльна, мы осуществляем контроль всего процесса работы и получаем результат, который делает клиентов счастивыми</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio section">
+        <div class="container">
+          <h2 class="section__title">Портфолио</h2>
+          <ul class="portfolio__list list-inline d-flex flex-column flex-md-row justify-content-xl-start">
+            <li>
+              <a href="#" class="portfolio__link section__link section__link--active">Все проекты</a>
+            </li>
+            <li>
+              <a href="#" class="portfolio__link section__link">Дизайн интерьера</a>
+            </li>
+            <li>
+              <a href="#" class="portfolio__link section__link">Отделочные работы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container-fluid px-0">
+          <div id="carousel" class="carousel slide pause" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <figure>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/portfolio-1.jpg">
+                    <source media="(min-width: 768px)" srcset="img/portfolio-1-tablet.jpg">
+                    <img src="img/portfolio-1-mobile.jpg" alt="Интерьер №1" class="d-block w-auto">
+                  </picture>
+                  <figcaption>Лофт интерьер для отеля Хилофт</figcaption>
+                </figure>
+                <span class="portfolio__category">Дизайн интерьера</span>
+              </div>
+              <div class="carousel-item">
+                <figure>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/portfolio-2.jpg">
+                    <source media="(min-width: 768px)" srcset="img/portfolio-2-tablet.jpg">
+                    <img src="img/portfolio-2-mobile.jpg" alt="Интерьер №2" class="d-block w-auto">
+                  </picture>
+                  <figcaption>Дизайн столовой в стиле "Бохо"</figcaption>
+                </figure>
+                <span class="portfolio__category">Отделочные работы</span>
+              </div>
+              <div class="carousel-item">
+                <figure>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/portfolio-3.jpg">
+                    <source media="(min-width: 768px)" srcset="img/portfolio-3-tablet.jpg">
+                    <img src="img/portfolio-3-mobile.jpg" alt="Интерьер №3" class="d-block w-auto">
+                  </picture>
+                  <figcaption>Дизайн интерьера гостиной</figcaption>
+                </figure>
+                <span class="portfolio__category">Дизайн интерьера</span>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="services section">
+          <div class="container d-xl-flex flex-xl-wrap justify-content-xl-between">
+            <h2 class="section__title w-100">Наши услуги</h2>
+            <ul class="list-inline nav flex-column flex-md-row flex-md-wrap flex-xl-column" id="servicesTab" role="tablist">
+              <li>
+                <a class="services__link section__link active" id="serviceOne-tab" data-toggle="tab" href="#serviceOne" role="tab" aria-controls="serviceOne" aria-selected="true">Дизайн жилого помещения</a>
+              </li>
+              <li>
+                <a class="services__link section__link" id="serviceTwo-tab" data-toggle="tab" href="#serviceTwo" role="tab" aria-controls="serviceTwo" aria-selected="false">Дизайн отдельных комнат</a>
+              </li>
+              <li>
+                <a class="services__link section__link" id="serviceThree-tab" data-toggle="tab" href="#serviceThree" role="tab" aria-controls="serviceThree" aria-selected="false">Дизайн коммерческих объектов</a>
+              </li>
+              <li>
+                <a class="services__link section__link" id="serviceFour-tab" data-toggle="tab" href="#serviceFour" role="tab" aria-controls="serviceFour" aria-selected="true">Ремонт под ключ</a>
+              </li>
+              <li>
+                <a class="services__link section__link" id="serviceFive-tab" data-toggle="tab" href="#serviceFive" role="tab" aria-controls="serviceFive" aria-selected="false">Отделочные работы</a>
+              </li>
+              <li>
+                <a class="services__link section__link" id="serviceSix-tab" data-toggle="tab" href="#serviceSix" role="tab" aria-controls="serviceSix" aria-selected="false">Выезд дизайнера на дом</a>
+              </li>
+            </ul>
+            <div class="services__conteiner-77">
+              <div class="tab-content overflow-hidden" id="servicesTabContent">
+                <div class="tab-pane fade show active" id="serviceOne" role="tabpanel" aria-labelledby="serviceOne-tab">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/services-1.jpg">
+                      <source media="(min-width: 768px)" srcset="img/services-1-tablet.jpg">
+                    <img src="img/services-1-mobile.jpg" class="services__img d-block w-auto" alt="">
+                  </picture>
+                  <div class="services__info">
+                    <h3 class="services__subtitle">Дизайн жилого помещения</h3>
+                    <p class="servises__descr">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+                    <span class="service__number">532 проекта</span>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="serviceTwo" role="tabpanel" aria-labelledby="serviceT  wo-tab">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/services-2.jpg">
+                    <source media="(min-width: 768px)" srcset="img/services-2-tablet.jpg">
+                    <img src="img/services-2-mobile.jpg" class="services__img d-block w-auto" alt="">
+                  </picture>
+                  <div class="services__info">
+                    <h3 class="services__subtitle">Дизайн отдельных комнат</h3>
+                    <p class="servises__descr">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+                    <span class="service__number">532 проекта</span>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="serviceThree" role="tabpanel" aria-labelledby="serviceThree-tab">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/services-3.jpg">
+                    <source media="(min-width: 768px)" srcset="img/services-3-tablet.jpg">
+                    <img src="img/services-3-mobile.jpg" class="services__img d-block w-auto" alt="">
+                  </picture>
+                  <div class="services__info">
+                    <h3 class="services__subtitle">Дизайн коммерческих объектов</h3>
+                    <p class="servises__descr">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+                    <span class="service__number">532 проекта</span>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="serviceFour" role="tabpanel" aria-labelledby="serviceFour-tab">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/services-1.jpg">
+                    <source media="(min-width: 768px)" srcset="img/services-1-tablet.jpg">
+                    <img src="img/services-1-mobile.jpg" class="services__img d-block w-auto" alt="">
+                  </picture>
+                  <div class="services__info">
+                    <h3 class="services__subtitle">Ремонт под ключ</h3>
+                    <p class="servises__descr">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+                    <span class="service__number">532 проекта</span>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="serviceFive" role="tabpanel" aria-labelledby="serviceFive-tab">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/services-2.jpg">
+                    <source media="(min-width: 768px)" srcset="img/services-2-tablet.jpg">
+                    <img src="img/services-2-mobile.jpg" class="services__img d-block w-auto" alt="">
+                  </picture>
+                  <div class="services__info">
+                    <h3 class="services__subtitle">Отделочные работы</h3>
+                    <p class="servises__descr">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+                    <span class="service__number">532 проекта</span>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="serviceSix" role="tabpanel" aria-labelledby="serviceSix-tab">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/services-3.jpg">
+                    <source media="(min-width: 768px)" srcset="img/services-3-tablet.jpg">
+                    <img src="img/services-3-mobile.jpg" class="services__img d-block w-auto" alt="">
+                  </picture>
+                  <div class="services__info">
+                    <h3 class="services__subtitle">Выезд дизайнера на дом</h3>
+                    <p class="servises__descr">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+                    <span class="service__number">532 проекта</span>
+                  </div>
+                </div>
+              </div>
+              <button class="services__btn">Консультация</button>
+            </div>
+
+          </div>
+        </section>
+        <section class="video">
+          <div class="container">
+            <h2 class="visually-hidden">Видео о студии BRUME</h2>
+            <button class="video__btn p-0">
+              <svg width="27" height="27"><use xlink:href="img/sprite.svg#play-button"></use></svg>
+            </button>
+            <span class="video__desc">О студии дизайна интерьеров BRUME за 2 минуты</span>
+          </div>
+      </section>
+      <section class="steps">
+        <div class="container">
+          <h2 class="section__title">Этапы работы</h2>
+          <ol class="list-inline steps__list d-md-flex flex-md-wrap">
+            <li>
+              <span class="steps__number">1</span>
+              <h3 class="steps__title">Консультация</h3>
+              <span>Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.</span>
+            </li>
+            <li>
+              <span class="steps__number">2</span>
+              <h3 class="steps__title">Техническое задание</h3>
+              <span>Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта.</span>
+            </li>
+            <li>
+              <span class="steps__number">3</span>
+              <h3 class="steps__title">Замеры и планировка</h3>
+              <span>Фиксируем размеры стен, окон, плинтусов, дверных проемов для эффективной работы.</span>
+            </li>
+            <li>
+              <span class="steps__number">4</span>
+              <h3 class="steps__title">Дизайн-концепция</h3>
+              <span>Создаем концепцию на основе пожеланий клиента, его образов и ощущений, подбираем мебель.</span>
+            </li>
+            <li>
+              <span class="steps__number">5</span>
+              <h3 class="steps__title">3D Визуализация</h3>
+              <span>Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным нормам.</span>
+            </li>
+            <li>
+              <span class="steps__number">6</span>
+              <h3 class="steps__title">Комплектация интерьера</h3>
+              <span>Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="contact-us">
+        <div class="container">
+          <div class="contact-us__container">
+            <h2 class="section__title text-white">Мечтаете об интерьере от BRUME?</h2>
+            <p class="contact-us__descr">Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.</p>
+            <form class="form" method="post" action="">
+              <ul class="list-inline form__list">
+                <li class="form__item">
+                  <label class="visually-hidden" for="name-field">Имя</label>
+                  <input class="form__field" id="name-field" type="text" name="name" placeholder="Имя*" required>
+                </li>
+                <li class="form__item">
+                  <label class="visually-hidden" for="phone-field">Телефон</label>
+                  <input class="form__field" id="phone-field" type="tel" name="phone" placeholder="Телефон*" required>
+                </li>
+                <li class="form__item">
+                  <label class="visually-hidden" for="email-field">E-mail*</label>
+                  <input class="form__field" id="email-field" type="email" name="email" placeholder="E-mail*" required>
+                </li>
+              </ul>
+              <button class="form__btn button" type="submit">Отправить</button>
+              <span class="form__disclaimer">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</span>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="section__title">Отзывы наших клиентов</h2>
+          <div class="reviews__content tab-content" id="reviewsTabContent">
+            <figure class="reviews__item tab-pane fade show active" id="reviewOne" role="tabpanel" aria-labelledby="reviewOne-tab">
+              <img src="img/review-1.jpg" alt="Александра Холодная" width="215" height="192">
+              <figcaption>
+                <h3 class="reviews__name">Александра Холодная</h3>
+                <span class="reviews__service">Услуга: Интерьер детской</span>
+                <p class="reviews__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
+              </figcaption>
+            </figure>
+            <figure class="reviews__item tab-pane fade" id="reviewTwo" role="tabpanel" aria-labelledby="reviewTwo-tab">
+              <img src="img/review-2.jpg" alt="Иван Иванов" width="215" height="192">
+              <figcaption>
+                <h3 class="reviews__name">Мария Сидорова</h3>
+                <span class="reviews__service">Услуга: Ремонт под ключ</span>
+                <p class="reviews__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
+              </figcaption>
+            </figure>
+            <figure class="reviews__item tab-pane fade" id="reviewThree" role="tabpanel" aria-labelledby="reviewThree-tab">
+              <img src="img/review-3.jpg" alt="Алла Сидорова" width="215" height="192">
+              <figcaption>
+                <h3 class="reviews__name">Ирина Петрова</h3>
+                <span class="reviews__service">Услуга: Отделочные работы</span>
+                <p class="reviews__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
+              </figcaption>
+            </figure>
+            <figure class="reviews__item tab-pane fade" id="reviewFour" role="tabpanel" aria-labelledby="reviewFour-tab">
+              <img src="img/review-1.jpg" alt="Наталья Михайлова" width="215" height="192">
+              <figcaption>
+                <h3 class="reviews__name">Наталья Михайлова</h3>
+                <span class="reviews__service">Услуга: Дизайн жилого помещения</span>
+                <p class="reviews__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.В следующий разобратимся к BRUME!</p>
+              </figcaption>
+            </figure>
+          </div>
+          <ul class="reviews__tablist list-inline nav" id="reviewsTab" role="tablist">
+            <li>
+              <a class="reviews__link active" id="reviewOne-tab" data-toggle="tab" href="#reviewOne" role="tab" aria-controls="reviewOne" aria-selected="true"></a>
+            </li>
+            <li>
+              <a class="reviews__link" id="reviewTwo-tab" data-toggle="tab" href="#reviewTwo" role="tab" aria-controls="reviewTwo" aria-selected="false"></a>
+            </li>
+            <li>
+              <a class="reviews__link" id="reviewThree-tab" data-toggle="tab" href="#reviewThree" role="tab" aria-controls="reviewThree" aria-selected="false"></a>
+            </li>
+            <li>
+              <a class="reviews__link" id="reviewFour-tab" data-toggle="tab" href="#reviewFour" role="tab" aria-controls="reviewFour" aria-selected="false"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="text-center">
+          <img src="img/logo-footer-mobile.png" width="70" height="40" alt="Логотип">
+        </div>
+        <div class="footer-social">
+          <ul class="list-inline row justify-content-center">
+            <li class="col-auto">
+              <a href="#">
+                <svg class="" width="27" height="27"><use xlink:href="img/sprite.svg#vk"></use></svg>
+              </a>
+            </li>
+            <li class="col-auto">
+              <a href="#">
+                <svg class="" width="27" height="27"><use xlink:href="img/sprite.svg#instagram"></use></svg>
+              </a>
+            </li>
+            <li class="col-auto">
+              <a href="#">
+                <svg class="" width="27" height="27"><use xlink:href="img/sprite.svg#facebook"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright row justify-content-between">
+          <span class="col-md-auto">BRUME interior 2017</span>
+          <span class="col-md-auto">BRUMEDesign</span>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".top-nav__toggler").click(function(){
+            $("#mainNavbar").show("200");
+        });
+        $(".main-nav__toggler").click(function(){
+            $("#mainNavbar").hide("200");
+        });
+    });
+
+      $(document).ready(function(){
+        if ($(window).width() >= 1200) {
+        $("#socialNavbarBox").append($("#socialNavbar"));
+      }
+      });
+    </script>
+  </body>
+
