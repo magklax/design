@@ -1,0 +1,167 @@
+.services {
+  margin-bottom: 80px;
+}
+
+.services h2 {
+  margin-bottom: 15px;
+}
+
+.services .nav {
+  margin-bottom: 40px;
+}
+
+.services__link {
+  padding: 16px 0;
+  line-height: 1.2;
+  font-weight: 300;
+
+  &.active {
+    font-weight: 600;
+    color: $dbl;
+  }
+}
+
+.services__img {
+  margin-bottom: 27px;
+}
+
+.services__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 35px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: $dbl;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  border: 2px solid;
+  transition: 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $org;
+  }
+}
+
+.services__subtitle,
+.service__number {
+  display: none;
+}
+
+.servises__descr {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .services {
+    margin-bottom: 115px;
+  }
+  .services .nav {
+    margin-bottom: 60px;
+  }
+
+  .services .nav li {
+    width: 50%;
+
+  }
+
+  .services__link {
+    padding: 36px 10px 36px 0;
+  }
+
+  .services__img {
+    margin-bottom: 50px;
+  }
+
+  .services__info {
+    position: relative;
+    padding-right: 200px;
+  }
+
+  .services__subtitle {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: $font-playfair;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  .servises__descr {
+    letter-spacing: -1px;
+  }
+
+  .service__number {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 22px;
+  }
+
+  .services__btn {
+    margin-left: 0;
+    font-size: 18px;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services {
+    margin-bottom: 20px;
+  }
+
+  .services h2 {
+    margin-bottom: 65px;
+  }
+
+  .services .nav {
+    width: 22%;
+    margin-bottom: 0;
+  }
+
+  .services__conteiner-77 {
+    position: relative;
+    width: 77%;
+  }
+
+  .services .nav li {
+    width: 100%;
+  }
+
+  .services__link {
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 65px;
+  }
+
+  .services__link.active {
+    transform: translateX(30px);
+    transition: 0.3s ease;
+  }
+
+  .service__number {
+    top: 10px;
+    right: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .servises__descr {
+    width: 75%;
+    margin-bottom: 0;
+  }
+
+  .services__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    padding: 15px 20px;
+    transform: translateY(-150%);
+  }
+}

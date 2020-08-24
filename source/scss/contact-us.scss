@@ -1,0 +1,143 @@
+.contact-us {
+  padding: 75px 0 50px;
+  min-height: 912px;
+  background-color: $dbl;
+  background-image: url("../img/form-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: rgba($wht, 0.7);
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.contact-us h2 {
+  margin-bottom: 15px;
+}
+
+.contact-us__descr {
+  margin-bottom: 15px;
+}
+
+.form__list {
+  margin-bottom: 0;
+  padding: 20px 0 10px;
+}
+
+.form__item {
+  margin-bottom: 50px;
+}
+
+.form__btn {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 3.6px;
+  border-radius: 5px;
+  color: $wht;
+}
+
+.form__field {
+  width: 100%;
+  padding: 5px 3px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $lgr;
+  color: inherit;
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent
+  }
+
+  &:focus::-moz-placeholder {
+    color: transparent
+  }
+
+  &:focus:-moz-placeholder {
+    color: transparent
+  }
+
+  &:focus:-ms-input-placeholder {
+    color: transparent
+  }
+}
+
+.form__disclaimer {
+  font-size: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-us {
+    min-height: 780px;
+    padding: 70px 0 0;
+    font-size: 22px;
+    background-image: url("../img/form-tablet.jpg");
+  }
+
+  .contact-us h2 {
+    margin-bottom: 10px;
+  }
+
+  .contact-us__descr,
+  .form {
+    padding: 0 115px;
+  }
+
+  .form__disclaimer {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-us {
+    min-height: auto;
+    padding: 0;
+    text-align: left;
+    background-image: url("../img/form.jpg");
+    background-position: 100% 0%;
+  }
+
+  .contact-us__container {
+    width: 50%;
+    min-height: 683px;
+    margin-right: auto;
+    margin-left: 0;
+    padding-top: 70px;
+    padding-right: 90px;
+    background-color: $dbl;
+  }
+
+  .contact-us h2 {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .contact-us__descr,
+  .form {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .form__list {
+    padding-bottom: 25px;
+  }
+
+  .form__item {
+    margin-bottom: 25px;
+  }
+
+  .form__disclaimer {
+    font-size: 14px;
+  }
+
+  .form__btn {
+    font-size: 15px;
+    color: $wht;
+    background-color: transparent;
+    border: 1px solid;
+  }
+}

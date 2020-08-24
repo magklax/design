@@ -6,14 +6,7 @@
 *.pdf
 *.psd
 *.sublime*
-source/
 node_modules/
 npm-debug.*
 Thumbs.db
-.editorconfig
-.gitattributes
-.travis.yml
 package-lock.json
-package.json
-gulpfile.js
-.stylelintrc

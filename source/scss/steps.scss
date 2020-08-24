@@ -1,0 +1,100 @@
+.steps {
+  font-family: $font-raleway;
+  padding: 95px 0 55px;
+}
+
+.steps__list {
+  padding-top: 40px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.steps__list li {
+  padding-bottom: 43px;
+}
+
+.steps__number {
+  display: none;
+}
+
+.steps__title {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  font-size: 24px;
+  line-height: 0.739;
+  font-weight: 600;
+  color: $dgr;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: $dgr;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .steps {
+    padding: 180px 0 70px;
+  }
+
+  .steps .section__title {
+    text-align: left;
+  }
+
+  .steps__list {
+    //display: flex;
+    //flex-wrap: wrap;
+    padding-top: 60px;
+  }
+
+  .steps__list li {
+    position: relative;
+    width: 50%;
+    padding-left: 75px;
+    padding-bottom: 70px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .steps__number {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    top: -30px;
+    left: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: $dgr;
+    background-image: url("../img/steps-number.png");
+    background-position: center;
+  }
+
+  .steps__title {
+    letter-spacing: -1.2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps {
+    padding: 120px 0 80px;
+  }
+
+  .steps__list {
+    padding-top: 70px;
+  }
+
+
+  .steps__list li {
+    width: 33.3%;
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,92 @@
+body {
+  background-color: $bg-color !important;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+img:not(.w-auto) {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 30px 0;
+  font-family: $font-raleway;
+}
+
+.section__title {
+  font-family: $font-playfair;
+  color: $dbl;
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section__link {
+  display: block;
+  font-size: 22px;
+  color: $lgr;
+  font-weight: 600;
+
+  &--active {
+    color: $dbl;
+  }
+
+  &.active {
+    color: $dbl;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+//Временно, переделать в .active
+  &:not(.section__link--active):hover,
+  &:not(.section__link--active):focus {
+    color: rgba($dbl, 0.8);
+  }
+}
+
+.button {
+  display: inline-block;
+  font-family: $font-raleway;
+  text-transform: uppercase;
+  background-color: $org;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .section {
+    padding: 75px 0;
+  }
+
+  .section .section__title, {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .container {
+    max-width: 1170px !important;
+  }
+
+  .section__link {
+    font-size: 18px;
+  }
+}
+
+
+
+

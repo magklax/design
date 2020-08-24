@@ -1,0 +1,148 @@
+.portfolio h2 {
+  margin-bottom: 25px;
+}
+
+.portfolio__link {
+  position: relative;
+  padding: 10px 0;
+
+  &:hover,
+  &:focus {
+    color: $dbl;
+  }
+}
+
+.portfolio__category {
+  display: none;
+}
+
+.carousel-item figure {
+  margin-bottom: 0;
+}
+
+.carousel-item img {
+  margin: 0 auto;
+}
+
+.carousel-item figcaption {
+  padding: 30px 10px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: $dbl;
+  text-align: center;
+}
+
+a.carousel-control-prev,
+a.carousel-control-next {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 612px;
+    background-color: rgba($dbl, .8);
+    background-image: url("../img/services-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .carousel-item figcaption {
+    padding-top: 45px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .portfolio .container-fluid {
+    padding: 0 15px !important;
+    max-width: 1170px !important;
+  }
+
+  .portfolio h2 {
+    margin-bottom: 40px;
+  }
+
+  .portfolio__list li {
+    padding-right: 58px;
+  }
+
+  .portfolio__link:hover::after,
+  .portfolio__link:focus::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $dbl;
+    transition: 0.3s ease;
+  }
+
+  .portfolio__category {
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 0;
+    font-size: 14px;
+    color: $wht;
+    transform: rotate(-90deg) translate(50%, -150%);
+  }
+
+  .carousel::before {
+    display: none;
+  }
+
+  .carousel-item figure {
+    display: flex;
+  }
+
+  .carousel-item img {
+    width: auto;
+  }
+
+  .carousel-item figcaption {
+    display: block;
+    background-color: $dbl;
+    width: 260px;
+    order: -1;
+    color: $wht;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: $wht;
+    text-align: left;
+  }
+
+  a.carousel-control-prev,
+  a.carousel-control-next {
+    display: flex;
+  }
+
+  a .carousel-control-prev-icon,
+  a .carousel-control-next-icon {
+    width: 40px;
+    height: 10px;
+  }
+
+  a .carousel-control-prev-icon {
+    background-image: url("../img/arrow-left.svg");
+  }
+
+  a .carousel-control-next-icon {
+    background-image: url("../img/arrow-right-dark.svg");
+  }
+}
