@@ -65,7 +65,7 @@ gulp.task("images", function () {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
-      /*imagemin.svgo()*/
+      imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
 });
@@ -85,7 +85,7 @@ gulp.task("copy", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "docs/",
     open: true,
     cors: true,
     ui: false

@@ -22,10 +22,11 @@
   position: relative;
   margin-bottom: 0;
   padding-bottom: 40px;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 0.739;
   font-weight: 600;
   color: $dgr;
+  white-space: nowrap;
 
   &::after {
     content: "";
@@ -48,8 +49,6 @@
   }
 
   .steps__list {
-    //display: flex;
-    //flex-wrap: wrap;
     padding-top: 60px;
   }
 

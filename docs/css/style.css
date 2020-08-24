@@ -1024,10 +1024,11 @@ a.carousel-control-next {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 40px;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 0.739;
   font-weight: 600;
-  color: #313131; }
+  color: #313131;
+  white-space: nowrap; }
   .steps__title::after {
     content: "";
     position: absolute;
