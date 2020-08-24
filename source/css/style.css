@@ -286,31 +286,57 @@ template, [hidden] {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: local("Raleway Light"), local("Raleway-Light"), url("../fonts/raleway-300.woff2") format("woff2"), url("../fonts/raleway-300.woff") format("woff"); }
 
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local("Raleway"), local("Raleway-Regular"), url("../fonts/raleway.woff2") format("woff2"), url("../fonts/raleway.woff") format("woff"); }
 
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: local("Raleway Medium"), local("Raleway-Medium"), url("../fonts/raleway-500.woff2") format("woff2"), url("../fonts/raleway-500.woff") format("woff"); }
 
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url("../fonts/raleway-600.woff2") format("woff2"), url("../fonts/raleway-600.woff") format("woff"); }
 
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local("Raleway Bold"), local("Raleway-Bold"), url("../fonts/raleway-700.woff2") format("woff2"), url("../fonts/raleway-700.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Playfair Display"), url("../fonts/playfair-display.woff2") format("woff2"), url("../fonts/playfair-display.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Playfair Display Bold"), url("../fonts/playfair-display-700.woff2") format("woff2"), url("../fonts/playfair-display-700.woff") format("woff"); }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;

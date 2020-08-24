@@ -31,11 +31,11 @@ gulp.task("css", function () {
     ]))
     .pipe(gulp.dest("source/css"))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("source/css"))
     .pipe(gulp.dest("docs/css"))
     .pipe(server.stream());
 });
-
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/inline/*.svg")
